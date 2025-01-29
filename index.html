@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/logo-mark.svg">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/index.css">
+  <link rel="stylesheet" href="./src/css/ticket.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  
+  <title>Conference ticket generator</title>
+</head>
+<body>
+  <main>
+    <header class="header">
+      <img src="./src/images/logo-mark.svg" alt="logo">
+      <h2>Coding Conf</h2>
+    </header>
+    
+    <div class="container-title">
+      <h1> Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p>Secure your spot at next year's biggest coding conference.</p>
+    </div>
+
+    <form action="ticket.html" class="form" id="form" method="get">
+      <div>
+        <p>Upload Avatar</p>
+        <label for="input-file" class="picture-area" tabindex="0">
+          <img id="image-avatar" src="./src/images/icon-upload.svg" alt="icon-upload">
+          <span id="upload-text">Drag and drop or click to upload</span>
+          <div id="button-container" style="display: none;">
+            <button type="button" id="remove-image" class="image-btn">Remove image</button>
+            <button type="button" id="remove-image" class="image-btn">Change image</button>
+          </div>
+        </label>
+        
+        <span class="info-picture"><img src="./src/images/icon-info.svg" alt="">Upload your photo (JPG or PNG, max size: 500KB).</span>
+        <span id="info-picture-error"><img src="./src/images/icon-info.svg" alt="icon-info">File toolarge. Please upload photo under 500KB</span>
+
+        <input type="file" id="input-file">
+      </div>
+
+      <div>
+        <p>Full Name</p>
+        <input id="fullName" type="text" required>
+      </div>
+
+      <div>
+        <p>Email Address</p>
+        <input id="email" type="email" placeholder="example@email.com" required>
+        <span id="message-error"><img src="./src/images/icon-info.svg" alt="icon-info">Please enter a valid email address.</span>
+      </div>
+
+      <div>
+        <p>GitHub Username</p>
+        <input type="text" placeholder="@yourusername">
+      </div>
+
+      <button type="submit" class="btn-generator">Generate My Ticket</button>
+    </form>
+  </main>
+
+  <script src="./src/js/index.js"></script>
+</body>
+</html>

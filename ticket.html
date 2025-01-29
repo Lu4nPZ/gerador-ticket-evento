@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/logo-mark.svg">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/index.css">
+  <link rel="stylesheet" href="./src/css/ticket.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  
+  <title>Conference ticket generator</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <img src="./src/images/logo-mark.svg" alt="logo">
+            <h2>Coding Conf</h2>
+        </header>
+
+        <div id="ticket-container" class="container-title">
+            <h1>Congrats, <span id="user-name"></span>! Your ticket is ready.</h1>
+            <p>We've emailed your ticket to <span id="user-email"></span> and will send updates in the run up to the event.</p>
+        </div>
+
+        <div class="ticket-container">
+            <div class="ticket">
+                <div class="info">
+                    <div class="info-event">
+                        <div>
+                            <h2><img src="./src/images/logo-mark.svg" alt="logo">Coding Conf</h2>
+                            <p>Jan 31, 2025 / Austin, TX</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-user">
+                        <img class="img-avatar" src="./src/images/logo-mark.svg" alt="">
+                        <div>
+                            <h3>Your Name</h3>
+                            <span><img src="./src/images/icon-github.svg" alt="icon-github">@yourusername</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <p>#01609</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  <script src="./src/js/index.js"></script>
+</body>
+</html>

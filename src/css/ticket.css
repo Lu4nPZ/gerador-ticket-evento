@@ -1,0 +1,14 @@
+.ticket-container{
+    background: url(../images/pattern-ticket.svg);
+    background-size: 20em 5em;
+    background-repeat: no-repeat;
+}
+
+.ticket{
+    display: flex;
+    padding: 1em;
+}
+
+.ticket img{
+    width: 1em;
+}
