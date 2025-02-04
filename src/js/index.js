@@ -12,13 +12,14 @@ document.getElementById('email').addEventListener('blur',function(){
 })
 
 document.getElementById('form').addEventListener('submit', function(event){
-    const emailInput = document.getElementById('email')
-    const errorMessage = document.getElementById('message-error')
+  const emailInput = document.getElementById('email')
+  const errorMessage = document.getElementById('message-error')
 
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)){
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userEmail)){
         event.preventDefault();
         errorMessage.style.display = 'flex';
         emailInput.style.marginBottom = '0.5em'
+        return;
     }
 })
 
