@@ -38,12 +38,64 @@
         background: url(../images/pattern-circle.svg) no-repeat -10% -3%, url(../images/pattern-circle.svg) no-repeat 120% 50%, url(../images/pattern-lines.svg) 50%, url(../images/pattern-squiggly-line-bottom-mobile-tablet.svg) no-repeat bottom left, url(../images/pattern-squiggly-line-top.svg) no-repeat right 3%;
         background-size: 30%, 30%, 270%, 80%, 30%;
     }
+
+    .container-title img{
+        width: 25em;
+    }
+
+    .ticket{
+        gap: 6em;
+    }
+
+    .ticket-container{
+        top: 320px;
+    }
+
+    .info-event{
+        margin-bottom: 2em;
+    }
 }
 
-@media(max-width: 430px){
+@media(max-width: 400px){
     main{
         background: url(../images/pattern-circle.svg) no-repeat -10% -3%, url(../images/pattern-circle.svg) no-repeat 120% 50%, url(../images/pattern-lines.svg) 50%, url(../images/pattern-squiggly-line-bottom-mobile-tablet.svg) no-repeat bottom left, url(../images/pattern-squiggly-line-top.svg) no-repeat right 3%;
         background-size: 30%, 30%, 290%, 80%, 30%;
+    }
+
+    .container-title img{
+        width: 20em;
+    }
+
+    .ticket{
+        gap: 5em;
+    }
+
+    .info-event img{
+        width: 1.3em;
+    }
+
+    .info-event h2{
+        font-size: 1.4em;
+    }
+
+    .info-event p{
+        font-size: 0.7em;
+    }
+
+    .ticket-container{
+        top: 315px;
+    }
+
+    .info-event{
+        margin-bottom: 2em;
+    }
+    
+    .info-user img{
+        width: 2.5em;
+    }
+    
+    .info-user h2{
+        font-size: 1.2em;
     }
 }
 
@@ -51,29 +103,5 @@
     main{
         background: url(../images/pattern-circle.svg) no-repeat -10% -3%, url(../images/pattern-circle.svg) no-repeat 120% 50%, url(../images/pattern-lines.svg) 50%, url(../images/pattern-squiggly-line-bottom-mobile-tablet.svg) no-repeat bottom left, url(../images/pattern-squiggly-line-top.svg) no-repeat right 3%;
         background-size: 30%, 30%, 355%, 80%, 30%;
-    }
-
-    .container-title{
-        width: 20em;
-    }
-
-    .container-title h1{
-        font-size: 1.7em;
-    }
-
-    .container-title p{
-        font-size: 1.2em;
-    }
-
-    .info-picture{
-        font-size: 0.8em;
-    }
-
-    .btn-generator{
-        font-size: 1rem;
-    }
-
-    .form{
-        width: 20em;
     }
 }

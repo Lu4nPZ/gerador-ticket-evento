@@ -10,5 +10,5 @@
 --Orange-500: hsl(7, 88%, 67%);
 --Orange-700: hsl(7, 71%, 60%);
 
---Gradient: hsl(7, 86%, 67%) to hsl(0, 0%, 100%)
+--Gradient: linear-gradient(90deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%))
 }

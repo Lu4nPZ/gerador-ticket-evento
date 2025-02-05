@@ -12,15 +12,24 @@ document.getElementById('email').addEventListener('blur',function(){
 })
 
 document.getElementById('form').addEventListener('submit', function(event){
-  const emailInput = document.getElementById('email')
-  const errorMessage = document.getElementById('message-error')
+    event.preventDefault();
 
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userEmail)){
-        event.preventDefault();
-        errorMessage.style.display = 'flex';
-        emailInput.style.marginBottom = '0.5em'
+    const fullName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const githubUser = document.getElementById('github-user').value;
+    const avatarImg = document.getElementById('image-avatar').src;
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        document.getElementById('message-error').style.display = 'flex';
         return;
     }
+
+    localStorage.setItem('fullName', fullName);
+    localStorage.setItem('email', email);
+    localStorage.setItem('githubUser', githubUser);
+    localStorage.setItem('avatarImg', avatarImg);
+
+    window.location.href = "ticket.html";
 })
 
 const fileInput = document.getElementById("input-file");

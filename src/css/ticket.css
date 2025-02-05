@@ -6,9 +6,15 @@
     text-align: center;
 }
 
+.container-title h1{
+    font-weight: 800;
+}
+
 .container-title p{
     width: 20em;
     margin-bottom: 1.5em;
+    font-weight: 700;
+    line-height: 1.5em;
 }
 
 .container-title img{
@@ -18,7 +24,7 @@
 .ticket-container{
     position: absolute;
     z-index: 1;
-    top: 290px;
+    top: 330px;
 }
 
 .ticket{
@@ -58,16 +64,18 @@
 
 .info-user{
     display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
-.info-user{
-    display: flex;
-    gap: 1em;
+.info-user img{
+    width: 3em;
+    border-radius: 0.4em;
 }
 
 .info-user h2{
     color: var(--Neutral-0);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.3em;
     margin-bottom: 0.3em;
 }
@@ -75,11 +83,21 @@
 .info-user span{
     display: flex;
     align-items: center;
-    color: var(--Neutral-0);
+    color: var(--Neutral-300);
     gap: 0.5em;
     font-size: 0.8em;
 }
 
 .info-user span img{
     width: 1.3em;
+}
+
+.user-name-title{
+    background: var(--Gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.user-email{
+    color: var(--Orange-500);
 }
