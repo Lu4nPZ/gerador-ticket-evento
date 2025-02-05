@@ -97,6 +97,22 @@
     .info-user h2{
         font-size: 1.2em;
     }
+
+    .form{
+        width: 80%;
+    }
+
+    .container-title{
+        width: 100%;
+    }
+
+    .container-title h1{
+        font-size: 2em;
+    }
+    
+    .container-title p{
+        font-size: 1em;
+    }
 }
 
 @media(max-width: 375px){
