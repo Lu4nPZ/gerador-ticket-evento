@@ -4,13 +4,13 @@ Este projeto consiste em um gerador de ticket para um determinado evento, confor
 
 ## Screenshot 
 Desktop 💻
-<img src="./src/images/background-desktop.png" alt="Captura de tela desktop">
+<img src="./src/images/captura-desktop.gif" alt="Captura de tela desktop">
 
 Mobile 📱
-<img src="./src/images/background-mobile.png" alt="Captura de tela mobile">
+<img src="./src/images/captura-mobile.gif" alt="Captura de tela mobile">
 
 Tablet 📱
-<img src="./src/images/background-tablet.png" alt="Captura de tela tablet">
+<img src="./src/images/captura-tablet.gif" alt="Captura de tela tablet">
 
 ## Tecnologias utilizadas 👨💻
 - HTML
